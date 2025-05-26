@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/helico.jpg">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <script src="../scripts/navbar.js" defer></script>
+    <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+    <title>Simu</title>
+</head>
+<body>
+<div class="page-container">
+    <!-- Logo -->
+    <header class="logo">
+        <a href="index.html">
+            <img src="../images/logo.jpg" alt="Logo du site">
+        </a>
+    </header>
+
+    <nav class="navbar">
+    <!-- Liens de navigation -->
+    <div class="nav-links">
+        <a href="index.html">Acceuil </a>
+        <a href="prestations.html">Prestations</a>
+        <!-- <a href="#">Champ sup</a> -->
+        <a href="contact.html">Contact</a>
+        <a href="panier.html">Panier</a>
+    </div>
+    </nav>
+  
+<!-- Formuaire -->
+  <form class="contact-form" action="../back/contact.php" method="POST">
+    <h2>Contactez-nous</h2>
+
+    <label for="nom">Nom</label>
+    <input type="text" id="nom" name="nom" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <!-- reCAPTCHA -->
+    <!-- <div class="g-recaptcha" data-sitekey="VOTRE_CLE_SITE"></div> -->
+
+    <button type="submit">Envoyer</button>
+  </form>
+
+      <footer class="site-footer">
+        <div class="footer-content">
+            <h2 class="footer-title">Les vols sont proposés toute l'année et sur réservation :</h2>
+
+            <div class="footer-columns">
+            <div class="footer-column">
+                <h3>Par téléphone au : 06 31 82 84 88 </h3>
+            </div>
+            <div class="footer-column">
+                <h3>Par mail dans la rubrique<a href="contact.html">Contact</a> </h3>
+            </div>
+            <div class="footer-column">
+                <h3>Par achat direct dans la rubrique<a href="prestations.html">Prestations</a></h3>
+            </div>
+            <div class="footer-column">
+                <h3>Règlement par chèque, espèce et chèques vacances possible.</h3>
+            </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+</body>
+</html>
